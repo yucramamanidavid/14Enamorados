@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día de los Enamorados - Rosaura Yana Pari</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Fondo animado -->
+  <div class="magic-background"></div>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Dedicatoria animada -->
+    <h1 id="dedicatoria"><span class="typed-text"></span></h1>
+
+    <!-- Nombre de tu pareja -->
+    <p id="nombre-pareja" data-aos="fade-up">Para mi amor, <strong>Rosaura Yana Pari</strong> ❤️</p>
+
+    <!-- Carrusel de fotos -->
+    <div class="carousel" data-aos="fade-up">
+      <div class="photo-container">
+        <img src="foto1.jpg" alt="Recuerdo 1" class="photo active">
+      </div>
+      <div class="photo-container">
+        <img src="foto2.jpg" alt="Recuerdo 2" class="photo">
+      </div>
+      <div class="photo-container">
+        <img src="foto3.jpg" alt="Recuerdo 3" class="photo">
+      </div>
+    </div>
+
+    <!-- Cartitas -->
+    <div class="cartitas" data-aos="zoom-in">
+      <h2>Cartas para ti, Rosaura ❤️</h2>
+      <div class="card-envelope" onclick="openEnvelope(this)">
+        <div class="envelope closed">
+          <div class="letter">
+            <div class="letter-header">
+              <i class="fas fa-heart"></i> Mi Amor,
+            </div>
+            <div class="letter-body">
+              <p>Eres el sol que ilumina mis días y la luna que me acompaña en mis noches. Gracias por ser mi refugio y mi mayor felicidad.</p>
+            </div>
+            <div class="letter-footer">
+              Con todo mi amor, <br><strong>Tu enamorado ❤️</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-envelope" onclick="openEnvelope(this)">
+        <div class="envelope closed">
+          <div class="letter">
+            <div class="letter-header">
+              <i class="fas fa-star"></i> Querida Rosaura,
+            </div>
+            <div class="letter-body">
+              <p>Cada día contigo es un regalo. Tu sonrisa es mi motivación y tu amor es mi razón de ser.</p>
+            </div>
+            <div class="letter-footer">
+              Siempre tuyo, <br><strong>Tu príncipe ❤️</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-envelope" onclick="openEnvelope(this)">
+        <div class="envelope closed">
+          <div class="letter">
+            <div class="letter-header">
+              <i class="fas fa-heartbeat"></i> Mi Reina,
+            </div>
+            <div class="letter-body">
+              <p>Gracias por ser tan especial. Eres mi sueño hecho realidad y mi corazón late solo por ti.</p>
+            </div>
+            <div class="letter-footer">
+              Te amo infinitamente, <br><strong>Tu caballero ❤️</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div><p>----------------------</p></div>
+    <!-- Mensaje aleatorio -->
+    <p id="random-message" data-aos="fade-up">✨ Aquí aparecerá un mensaje especial ✨</p>
+
+    <!-- Corazones animados -->
+    <div class="hearts-animation" data-aos="zoom-in">
+      <div class="heart left-heart"></div>
+      <div class="heart right-heart"></div>
+    </div>
+
+    <!-- Pétalos de rosa cayendo -->
+    <div class="petals"></div>
+  </div>
+
+  <!-- Música de fondo -->
+  <audio id="background-music" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
