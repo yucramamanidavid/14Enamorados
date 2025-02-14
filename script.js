@@ -19,7 +19,7 @@ const typed = new Typed('.typed-text', {
 
 // Reproducir música con Howler.js
 const sound = new Howl({
-  src: ['cancion.mp3'],
+  src: ['supieras.mp3'],
   loop: true,
   volume: 0.5, // Volumen al 50%
 });
